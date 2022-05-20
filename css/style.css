@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+#inicio {
+  background-image: url(../img/text_img/cool-background.png);
+  background-position: cover;
+  height: 36%;
+}
+
+body {
+  background-color: #d3d3f5;
+  font-family: "Patrick Hand", cursive;
+  font-size: 25px;
+}
+
+/*Menu de navegação*/
+
+header {
+  display: flex;
+  height: 74px;
+}
+
+header > nav {
+  width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > button {
+  padding: 14px;
+  background-color: rgb(216, 171, 239);
+  border-bottom: 2px solid transparent;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+}
+
+nav a {
+  text-decoration: none;
+}
+/* Apresentação*/
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 66%;
+  align-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 8%;
+}
+
+.ap-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ap-text img {
+  width: 23%;
+  border-radius: 126px;
+  margin-left: 10%;
+}
+
+.caixa h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+}
+
+.arrow {
+  width: 8%;
+  margin-top: 8%;
+}
+
+/* Minhas características*/
+
+.caracteristics {
+  margin-top: 14%;
+}
+.caracteristics img {
+  width: 27%;
+  border-radius: 30px;
+  box-shadow: 9px 7px 12px 1px rgb(118 118 118);
+}
+
+.caracteristics img:hover {
+  transform: scale(1.3);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.caracteristics ul {
+  align-self: center;
+}
+
+/* Meus contatos */
+
+footer {
+  background-color: #d5c1f0;
+  display: flex;
+  justify-content: center;
+  padding: 34px;
+}
+
+.redes {
+  border: solid;
+  border-radius: 20px;
+  box-shadow: 9px 7px 12px 1px rgb(118 118 118);
+}
+
+#contacts img {
+  width: 10%;
+}
+
+.btn-inicio {
+  width: 60px;
+  background-color: white;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 2.8rem;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.btn-inicio img {
+  width: 40px;
+}
+
+.btn-inicio:hover {
+  opacity: 0.9;
+}
