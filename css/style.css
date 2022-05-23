@@ -10,7 +10,7 @@ html {
 body {
   background-color: #d3d3f5;
   font-family: "Patrick Hand", cursive;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 /*Menu de navegação*/
@@ -67,6 +67,7 @@ nav a {
   width: 23%;
   border-radius: 126px;
   margin-left: 10%;
+  transform: translate(10px, 10px);
 }
 
 .caixa h1 {
@@ -85,19 +86,29 @@ nav a {
   margin-top: 14%;
 }
 .caracteristics img {
-  width: 27%;
+  width: 25%;
   border-radius: 30px;
   box-shadow: 9px 7px 12px 1px rgb(118 118 118);
 }
 
 .caracteristics img:hover {
-  transform: scale(1.3);
+  transform: scale(1.5);
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
 .caracteristics ul {
-  align-self: center;
+  list-style: none;
+}
+
+/* Meus projetos */
+
+#projects {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Meus contatos */
@@ -109,15 +120,29 @@ footer {
   padding: 34px;
 }
 
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.img-footer {
+  width: 10%;
+}
+
+.redes > a {
+  width: 50%;
+}
 .redes {
   border: solid;
   border-radius: 20px;
   box-shadow: 9px 7px 12px 1px rgb(118 118 118);
+  display: flex;
+  justify-content: space-around;
 }
 
-#contacts img {
-  width: 10%;
-}
+/* Botão para o início*/
 
 .btn-inicio {
   width: 60px;
