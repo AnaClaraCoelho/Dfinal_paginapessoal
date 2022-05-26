@@ -18,6 +18,7 @@ body {
 header {
   display: flex;
   height: 74px;
+  justify-content: space-around;
 }
 
 header > nav {
@@ -38,6 +39,18 @@ nav > button {
   border-radius: 16px;
 }
 
+nav a:hover {
+    color: #494848;
+    text-decoration: underline;
+  }
+  
+nav a:active {
+    color: #302adc;
+    text-decoration: underline;
+  }
+
+ 
+
 nav a {
   text-decoration: none;
 }
@@ -54,7 +67,7 @@ nav a {
   flex-direction: column;
   margin: auto;
   margin-top: 3%;
-  margin-bottom: 8%;
+  margin-bottom: 3%;
 }
 
 .ap-text {
@@ -106,42 +119,73 @@ nav a {
 #projects {
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  padding-bottom: 10%;
+  gap: 80px;
 }
 
+#projects > button{
+    border: none;
+    background-color: white;
+}
+
+#projects > button:hover{
+transform: scale(1.5);
+}
+
+.link-projects-1 img{
+width: 45%;
+}
+
+.link-projects-2 img{
+width: 40%;
+}
+
+.link-projects-3 img{
+    width: 60%;
+}
+
+.link-projects-4 img{
+    width: 62%;
+}
 /* Meus contatos */
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d5c1f0;
+  }
+
+.links {
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 9px 7px 12px 1px rgb(118 118 118);
+    width: 8%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links button{
   background-color: #d5c1f0;
-  display: flex;
-  justify-content: center;
-  padding: 34px;
+  border: none;
 }
 
-#contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
+.links button:hover{
+    transition: all 0.3s ease;
+    transform: scale(0.85);
 }
 
-.img-footer {
-  width: 10%;
+.links button:visited{
+    background-color: rgba(193, 193, 193, 0.952);
 }
 
-.redes > a {
-  width: 50%;
+.links img {
+  width: 30px;
 }
-.redes {
-  border: solid;
-  border-radius: 20px;
-  box-shadow: 9px 7px 12px 1px rgb(118 118 118);
-  display: flex;
-  justify-content: space-around;
-}
-
 /* Botão para o início*/
 
 .btn-inicio {
@@ -149,7 +193,6 @@ footer {
   background-color: white;
   height: 60px;
   border-radius: 50%;
-  font-size: 2.8rem;
   text-align: center;
   position: fixed;
   bottom: 30px;
@@ -164,4 +207,71 @@ footer {
 
 .btn-inicio:hover {
   opacity: 0.9;
+}
+
+@media screen and (min-width: 375px) {
+  body{
+    font-size: 22px;
+  }
+  header > nav {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+  }
+nav > button {
+  padding: 12px;
+  width: 74px;
+}
+
+nav a{
+  font-size: 13px;
+}
+
+.ap-text{
+  flex-direction: column-reverse;
+}
+
+.ap-text img {
+  width: 53%;
+  margin-left: 0%;
+}
+
+.arrow{
+  width: 18%;
+}
+
+.caracteristics img {
+  width: 95%;
+}
+
+.links{
+  width: 30%;
+  margin-bottom: 9%;
+}
+
+.links button{
+  width: 34%;
+}
+
+.btn-inicio img {
+  width: 32px;
+}
+
+.btn-inicio {
+  width: 48px;
+  height: 48px;
+  right: 18px;
+}
+
+#projects > button:hover{
+  transform: none;
+  }
+
+  .caracteristics img:hover {
+    transform: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
