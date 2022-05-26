@@ -117,7 +117,7 @@ nav a {
 /* Meus projetos */
 
 #projects {
-  background-color: #fff;
+  background-color: #d5c1f0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,28 +127,36 @@ nav a {
 
 #projects > button{
     border: none;
-    background-color: white;
+    background-color:#d5c1f0 ;
+
 }
 
 #projects > button:hover{
-transform: scale(1.5);
+transform: scale(1.2);
 }
 
 .link-projects-1 img{
 width: 45%;
+box-shadow: 10px 20px 10px 20px #d5c1f0;
 }
 
 .link-projects-2 img{
 width: 40%;
+box-shadow: 8px 4px 20px 19px #d5c1f0;
 }
+
 
 .link-projects-3 img{
     width: 60%;
+    box-shadow: 8px 4px 20px 19px #d5c1f0;
 }
 
 .link-projects-4 img{
     width: 62%;
+    box-shadow: 8px 4px 20px 19px #d5c1f0;
 }
+
+
 /* Meus contatos */
 
 footer {
@@ -156,7 +164,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #d5c1f0;
+    background: linear-gradient(to right, #bfb4ef, #dfd2ee) ;
   }
 
 .links {
@@ -170,7 +178,8 @@ footer {
 }
 
 .links button{
-  background-color: #d5c1f0;
+ 
+  background: linear-gradient(to right, #bfb4ef, #dfd2ee) ;
   border: none;
 }
 
@@ -209,7 +218,7 @@ footer {
   opacity: 0.9;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 700px) {
   body{
     font-size: 22px;
   }
