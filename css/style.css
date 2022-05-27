@@ -45,7 +45,7 @@ nav a:hover {
   }
   
 nav a:active {
-    color: #302adc;
+    color: #995be6;
     text-decoration: underline;
   }
 
@@ -102,12 +102,13 @@ nav a {
   width: 25%;
   border-radius: 30px;
   box-shadow: 9px 7px 12px 1px rgb(118 118 118);
+  transition: transform .2s;
 }
 
 .caracteristics img:hover {
-  transform: scale(1.5);
-  margin-top: 2%;
-  margin-bottom: 2%;
+  transform: scale(1.2);
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .caracteristics ul {
@@ -121,7 +122,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 10%;
+  padding-bottom: 6%;
   gap: 80px;
 }
 
@@ -178,13 +179,14 @@ footer {
 }
 
 .links button{
- 
+  margin-top: 5%;
   background: linear-gradient(to right, #bfb4ef, #dfd2ee) ;
   border: none;
+  border-radius: 25px;
+  transition: transform .2s;
 }
 
 .links button:hover{
-    transition: all 0.3s ease;
     transform: scale(0.85);
 }
 
