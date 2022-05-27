@@ -126,34 +126,40 @@ nav a {
   gap: 80px;
 }
 
-#projects > button{
+.projects_{
+  margin-left: 26%;
+  margin-right: 13%;
+}
+
+#projects  button{
     border: none;
     background-color:#d5c1f0 ;
+    margin-top: 5%;
 
 }
 
-#projects > button:hover{
+#projects  button:hover{
 transform: scale(1.2);
 }
 
 .link-projects-1 img{
-width: 45%;
+width: 55%;
 box-shadow: 10px 20px 10px 20px #d5c1f0;
 }
 
 .link-projects-2 img{
-width: 40%;
+width: 45%;
 box-shadow: 8px 4px 20px 19px #d5c1f0;
 }
 
 
 .link-projects-3 img{
-    width: 60%;
+    width: 65%;
     box-shadow: 8px 4px 20px 19px #d5c1f0;
 }
 
 .link-projects-4 img{
-    width: 62%;
+    width: 67%;
     box-shadow: 8px 4px 20px 19px #d5c1f0;
 }
 
